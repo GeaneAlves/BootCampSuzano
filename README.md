@@ -165,6 +165,40 @@ saques = [1500, 100]
 
 200 in saques
 
+curso = "Curso de Python"
+frutas = ["laranja", "uva", "limão"]
+saques = [1500, 100]
+
+print("Python" in curso)
+
+print("maça" not in frutas)
+
+print(200 in saques)
+
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+print(curso is nome_curso)
+
+print(curso is not nome_curso)
+
+print(saldo is limite)
+
+
+def new_func1():
+    def new_func():
+        saldo = 1000
+        saque = 250
+        limite = 200
+        conta_especial = True
+        print(saldo >= saque and saque <= limite or conta_especial and saldo >= saque)
+
+        print((saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque))
+
+    new_func()
+
+new_func1()
 
 
 
