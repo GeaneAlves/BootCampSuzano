@@ -6,7 +6,7 @@ Exercícios do BootCamp
 # Adição
 print(1 + 1)
 
-###Subtração print(10 - 2)
+### Subtração print(10 - 2)
 
 # Multiplicação
 print(4 * 3)
@@ -45,20 +45,20 @@ saldo = 450
 saque = 200
 print(saldo != saque)
 
-#Maior que / maior ou igual
+# Maior que / maior ou igual
 saldo = 450
 saque = 200
 print(saldo > saque)
 print(saldo >= saque)
 
-#Menor que / menor ou igual
+# Menor que / menor ou igual
 saldo = 450
 saque = 200
 print(saldo < saque)
 print(saldo <= saque)
 
-###OPeradores de atribuição
-#Utilizados para definir o valor inicial ou sobrescever o valor de uma variável
+### OPeradores de atribuição
+# Utilizados para definir o valor inicial ou sobrescever o valor de uma variável
 
 # Atrubuição simples
 saldo = 500
@@ -114,7 +114,6 @@ saldo <= limite
 saldo = 1000
 saque = 200
 limite = 100
-
 saldo >= saque and saque <= limite
 
 
@@ -124,6 +123,53 @@ saque = 200
 limite = 100
 
 saldo >= saque or saque <= limite
+
+
+### Operador Negação
+not 1000 > 1500
+not contatos_emergencia
+not "saque 1500;"
+not ""
+
+### Pareêntesis
+saldo = 1000
+saque = 250
+limite = 200
+conta_especial = True
+saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+
+(saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque)
+
+### Operadores de Identidade
+# são operadores utilizados para comparar se os dois objetos de teste ocupam a mesma posição na memória
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+curso is nome_curso
+
+curso is not nome_curso
+
+saldo us limite
+
+### Operadores de Associação
+# São operadores utilizados para verificar se um objeto está presente em uma sequência
+
+curso = "Curso de Python"
+frutas = ["laranja", "uva", "limão"]
+saques = [1500, 100]
+
+"Python" in curso
+
+"maça" not in frutas
+
+200 in saques
+
+
+
+
+
+
 
 
 
