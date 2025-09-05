@@ -98,6 +98,109 @@ saldo = 80
 saldo **= 2
 print(saldo)
 
+### Operadores Lógicos
+# Utilizados em conjunto com os operadores de comparação, para montar uma expressão lógica. Ao ser usado, o resultado retornado é um booleano, podemos combinar operadores de compoaração com os operadores lógicos.
+# op_comparacao + op_logico + op_comparacao ... N ...
+
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque
+
+saldo <= limite
+
+### Operador E
+saldo = 1000
+saque = 200
+limite = 100
+saldo >= saque and saque <= limite
+
+
+### Operador OU
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque or saque <= limite
+
+
+### Operador Negação
+not 1000 > 1500
+not contatos_emergencia
+not "saque 1500;"
+not ""
+
+### Pareêntesis
+saldo = 1000
+saque = 250
+limite = 200
+conta_especial = True
+saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+
+(saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque)
+
+### Operadores de Identidade
+# são operadores utilizados para comparar se os dois objetos de teste ocupam a mesma posição na memória
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+curso is nome_curso
+
+curso is not nome_curso
+
+saldo us limite
+
+### Operadores de Associação
+# São operadores utilizados para verificar se um objeto está presente em uma sequência
+
+curso = "Curso de Python"
+frutas = ["laranja", "uva", "limão"]
+saques = [1500, 100]
+
+"Python" in curso
+
+"maça" not in frutas
+
+200 in saques
+
+
+curso = "Curso de Python"
+frutas = ["laranja", "uva", "limão"]
+saques = [1500, 100]
+
+print("Python" in curso)
+
+print("maça" not in frutas)
+
+print(200 in saques)
+
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+print(curso is nome_curso)
+
+print(curso is not nome_curso)
+
+print(saldo is limite)
+
+
+def new_func1():
+    def new_func():
+        saldo = 1000
+        saque = 250
+        limite = 200
+        conta_especial = True
+        print(saldo >= saque and saque <= limite or conta_especial and saldo >= saque)
+
+        print((saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque))
+
+    new_func()
+
+new_func1()
+
 
 
 
