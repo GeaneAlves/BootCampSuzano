@@ -23,3 +23,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+    Entrada (linha 1 = permissão, linha 2 = idade)	Condição avaliada	Saída esperada
+true
+20	Tem permissão e idade >= 18	Acesso permitido
+false
+25	Sem permissão, mesmo com idade	Acesso negado
+true
+16	Tem permissão mas idade < 18	Idade insuficiente
+false
+15	Sem permissão e ainda menor de idade	Acesso negado
